@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Panta_Piscoche_Form_Register</string>
+    <string-array name="opciones_orden">
+        <item>Ordenar por Código</item>
+        <item>Ordenar por Apellidos</item>
+    </string-array>
+</resources>

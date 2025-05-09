@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E7"
+    android:orientation="vertical">
+
+    <!-- Fondo rojo con texto alineado abajo a la izquierda -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#D20037"
+        android:gravity="bottom|start"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:text="Editar"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <!-- Contenedor principal del formulario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E7E7E7"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="24dp">
+
+        <!-- Campo de código (solo lectura) -->
+        <TextView
+            android:id="@+id/tvCodigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Código: 1234567890"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#D20037"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Nombres -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#D20037"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconDrawable="@drawable/ic_person"
+            app:startIconTint="#D20037"
+            android:textColor="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="56dp"
+                android:paddingStart="50dp"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:hint="Nombres"
+                android:inputType="textPersonName"
+                android:textColor="#000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Apellidos -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#D20037"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconDrawable="@drawable/ic_person"
+            app:startIconTint="#D20037"
+            android:textColor="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:paddingStart="50dp"
+                android:hint="Apellidos"
+                android:inputType="textPersonName"
+                android:textColor="#000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Correo -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#D20037"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="#D20037"
+            android:textColor="#000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:paddingStart="50dp"
+                android:textColor="#000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Botón Actualizar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D20037"
+                android:text="Actualizar"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:fontFamily="@font/helvetica_neue_medium" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

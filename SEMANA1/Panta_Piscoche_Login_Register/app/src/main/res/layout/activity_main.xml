@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Logo de la empresa -->
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/logo_uns" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Escuela de Sistemas e Informática"
+                android:textColor="#dc4c61"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Botón: Login con Email -->
+        <Button
+            android:id="@+id/btnEmail"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#dc4c61"
+            android:text="Inciar con Email"
+            android:textColor="#FFFFFF"
+            app:icon="@android:drawable/ic_dialog_email"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconTint="@android:color/white" />
+
+        <!-- Botón: Login -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#dc4c61"
+            android:text="Iniciar Sesión"
+            android:textColor="#FFFFFF"
+            app:icon="@android:drawable/ic_lock_idle_lock"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconTint="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dc4c61"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Botón: Sign Up -->
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#ffffff"
+            android:text="Registrarse"
+            android:textColor="#dc4c61"
+            android:textStyle="bold"
+            app:icon="@android:drawable/ic_input_add"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconTint="#dc4c61" />
+
+    </LinearLayout>
+
+</LinearLayout>

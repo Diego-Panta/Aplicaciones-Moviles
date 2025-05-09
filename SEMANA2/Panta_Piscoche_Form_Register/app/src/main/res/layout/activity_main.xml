@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E7E7E7">
+
+    <!-- Sección superior con logo e inputs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_login"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="20sp">
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="35mm"
+                android:layout_height="35mm"
+                android:layout_marginBottom="15sp"
+                android:src="@drawable/logo_uns_v1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Escuela de Sistemas e Informática"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:fontFamily="@font/helvetica_neue_bold"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/helvetica_neue_bold"/>
+
+        <!-- Input de Email -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_dialog_email"
+                android:tint="#D20037"
+                android:layout_marginEnd="12dp"/>
+
+            <EditText
+                android:id="@+id/etEmailLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/helvetica_neue_bold"/>
+        </LinearLayout>
+
+        <!-- Input de Password -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_lock_idle_lock"
+                android:tint="#D20037"
+                android:layout_marginEnd="12dp"/>
+
+            <EditText
+                android:id="@+id/etPasswordLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/helvetica_neue_bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Sección inferior con botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <Button
+            android:id="@+id/btnLoginUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sesión"
+            android:backgroundTint="#D20037"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:fontFamily="@font/helvetica_neue_medium"/>
+
+    </LinearLayout>
+</LinearLayout>

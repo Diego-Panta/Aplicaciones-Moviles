@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="50dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="20sp">
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="35mm"
+            android:layout_height="35mm"
+            android:layout_marginBottom="15sp"
+            android:src="@drawable/logo_uns"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30sp"
+            android:text="Escuela de Sistemas e Informática"
+            android:textColor="#D20037"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/helvetica_neue_bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido!"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/helvetica_neue_bold"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnRegisterUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Estudiante"
+        android:backgroundTint="#D20037"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/helvetica_neue_medium"/>
+
+    <Button
+        android:id="@+id/btnViewStudents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Estudiantes"
+        android:backgroundTint="#dc4c61"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/helvetica_neue_medium"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:backgroundTint="#888888"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:fontFamily="@font/helvetica_neue_medium"/>
+</LinearLayout>
