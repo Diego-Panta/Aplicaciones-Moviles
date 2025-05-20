@@ -1,0 +1,142 @@
+[
+  {
+    "pregunta": "¿Cuál fue el primer teléfono móvil comercializado que utilizó tecnología de comunicación celular analógica (1G)?",
+    "opciones": [
+      "Motorola DynaTAC 8000X",
+      "Nokia 5110",
+      "IBM Simon",
+      "Ericsson T18"
+    ],
+    "respuestaCorrecta": "Motorola DynaTAC 8000X"
+  },
+  {
+    "pregunta": "¿Qué empresa lanzó el primer smartphone con Android?",
+    "opciones": [
+      "Samsung",
+      "Google",
+      "HTC",
+      "LG"
+    ],
+    "respuestaCorrecta": "HTC"
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes componentes se considera el \"cerebro\" de un dispositivo móvil, responsable de ejecutar las instrucciones de los programas?",
+    "opciones": [
+      "GPU (Unidad de Procesamiento Gráfico)",
+      "CPU (Unidad Central de Procesamiento)",
+      "RAM (Memoria de Acceso Aleatorio)",
+      "NFC (Near Field Communication)"
+    ],
+    "respuestaCorrecta": "CPU (Unidad Central de Procesamiento)"
+  },
+  {
+    "pregunta": "¿Qué tipo de memoria se utiliza principalmente en los dispositivos móviles modernos para almacenar el sistema operativo y las aplicaciones?",
+    "opciones": [
+      "Memoria Flash",
+      "Memoria RAM",
+      "Memoria ROM",
+      "Memoria Cache"
+    ],
+    "respuestaCorrecta": "Memoria Flash"
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes capas de Android Studio se encarga de la interacción directa entre el hardware del dispositivo y el sistema operativo?",
+    "opciones": [
+      "Capa de Aplicación",
+      "Capa de Framework",
+      "Capa del Sistema Operativo",
+      "Capa de Hardware Abstracción (HAL)"
+    ],
+    "respuestaCorrecta": "Capa de Hardware Abstracción (HAL)"
+  },
+  {
+    "pregunta": "En el desarrollo de aplicaciones para Android, ¿qué herramienta de Android Studio se utiliza para realizar la gestión de dependencias y control de versiones de la aplicación?",
+    "opciones": [
+      "Gradle",
+      "Android Emulator",
+      "AVD Manager",
+      "SDK Manager"
+    ],
+    "respuestaCorrecta": "Gradle"
+  },
+  {
+    "pregunta": "¿Qué componente de Android Studio permite emular un dispositivo Android para probar aplicaciones sin necesidad de un dispositivo físico?",
+    "opciones": [
+      "AVD Manager",
+      "Layout Inspector",
+      "Logcat",
+      "Firebase Emulator"
+    ],
+    "respuestaCorrecta": "AVD Manager"
+  },
+  {
+    "pregunta": "¿Cuál es la capa responsable de gestionar la red, la seguridad y las comunicaciones dentro de un dispositivo móvil con Android?",
+    "opciones": [
+      "Capa de Aplicación",
+      "Capa de Framework",
+      "Capa de Hardware Abstracción (HAL)",
+      "Capa de Middleware"
+    ],
+    "respuestaCorrecta": "Capa de Framework"
+  },
+  {
+    "pregunta": "En la arquitectura de un sistema operativo móvil, ¿qué capa se encarga de proporcionar servicios como gestión de memoria, multitarea y manejo de procesos?",
+    "opciones": [
+      "Capa de Kernel",
+      "Capa de Framework",
+      "Capa de Aplicación",
+      "Capa de Hardware Abstracción (HAL)"
+    ],
+    "respuestaCorrecta": "Capa de Kernel"
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un archivo clave en Android Studio que define los permisos, actividades y otras configuraciones fundamentales de una aplicación Android?",
+    "opciones": [
+      "build.gradle",
+      "AndroidManifest.xml",
+      "res/layout/activity_main.xml",
+      "gradle.properties"
+    ],
+    "respuestaCorrecta": "AndroidManifest.xml"
+  },
+  {
+    "pregunta": "En Android Studio, ¿qué archivo define las dependencias y configuraciones del proyecto para la compilación y distribución?",
+    "opciones": [
+      "settings.gradle",
+      "build.gradle",
+      "AndroidManifest.xml",
+      "proguard-rules.pro"
+    ],
+    "respuestaCorrecta": "build.gradle"
+  },
+  {
+    "pregunta": "¿Qué es un \"Intent\" en Android y cómo se utiliza en el desarrollo de aplicaciones?",
+    "opciones": [
+      "Interfaz gráfica",
+      "Comunicación entre componentes",
+      "Gestión de permisos",
+      "Notificación push"
+    ],
+    "respuestaCorrecta": "Comunicación entre componentes"
+  },
+  {
+    "pregunta": "¿Qué es el \"Dalvik Virtual Machine\" en Android y qué función desempeñaba en versiones anteriores del sistema operativo?",
+    "opciones": [
+      "Gestión de memoria",
+      "Máquina virtual previa a Android 5.0",
+      "Servicio en segundo plano",
+      "Gestor de ciclo de vida"
+    ],
+    "respuestaCorrecta": "Máquina virtual previa a Android 5.0"
+  },
+  {
+    "pregunta": "En el ciclo de vida de una actividad en Android, ¿qué método se invoca cuando la actividad se detiene, pero aún permanece en memoria (es decir, no se destruye)?",
+    "opciones": [
+      "onPause()",
+      "onStop()",
+      "onDestroy()",
+      "onRestart()"
+    ],
+    "respuestaCorrecta": "onStop()"
+  }
+]

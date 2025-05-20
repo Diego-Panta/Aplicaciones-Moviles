@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo_inicio"
+        android:orientation="vertical">
+
+        <!-- Contenedor general -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!-- Imagen UNS arriba a la izquierda -->
+            <ImageView
+                android:id="@+id/imgUNS"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/logo_uns_blanco"
+                android:background="@drawable/circular_border"
+                android:padding="10dp"/>
+
+        </FrameLayout>
+
+        <!-- Imagen del Quiz centrada -->
+        <ImageView
+            android:id="@+id/imgQuiz"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/logo_quiz" />
+
+        <!-- Nombre debajo de imgQuiz -->
+
+        <!-- Espaciador -->
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/fondo_name"
+            android:fontFamily="@font/bungee_regular"
+            android:gravity="center"
+            android:hint="Nombre"
+            android:paddingHorizontal="12dp"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:textSize="22dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Botón al fondo cómodo para el dedo -->
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="40dp"
+            android:layout_marginHorizontal="25sp"
+            android:backgroundTint="#D20037"
+            android:elevation="4dp"
+            android:fontFamily="@font/bungee_regular"
+            android:paddingVertical="5dp"
+            android:text="Iniciar Quiz"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:translationZ="2dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

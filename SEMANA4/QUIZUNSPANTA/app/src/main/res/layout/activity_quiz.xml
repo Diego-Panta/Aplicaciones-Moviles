@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quizLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292D39"
+    tools:context=".QuizActivity">
+
+
+    <!-- Contador de puntaje -->
+    <TextView
+        android:id="@+id/txtPuntaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="#E02C4C"
+        android:fontFamily="@font/baloo2_variablefont_wght"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Temporizador circular -->
+    <TextView
+        android:id="@+id/txtTemporizador"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_timer_circle"
+        android:gravity="center"
+        android:text="30"
+        android:textColor="#004643"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Pregunta -->
+    <TextView
+        android:id="@+id/txtPregunta"
+        android:layout_width="0dp"
+        android:layout_height="480px"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20sp"
+        android:background="@drawable/bg_pregunta"
+        android:padding="10dp"
+        android:text="¿Cuál es la capital de Francia?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:fontFamily="@font/baloo2_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTemporizador" />
+
+    <!-- Opciones -->
+    <LinearLayout
+        android:id="@+id/opcionesLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPregunta">
+
+        <TextView
+            android:id="@+id/btnOpcion1"
+            style="@style/OpcionBoton"
+            android:background="@drawable/boton_opcion"
+            android:text="Opción 1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="4dp"/>
+
+        <TextView
+            android:id="@+id/btnOpcion2"
+            style="@style/OpcionBoton"
+            android:background="@drawable/boton_opcion"
+            android:text="Opción 2"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="4dp"/>
+
+        <TextView
+            android:id="@+id/btnOpcion3"
+            style="@style/OpcionBoton"
+            android:background="@drawable/boton_opcion"
+            android:text="Opción 3"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="4dp"/>
+
+        <TextView
+            android:id="@+id/btnOpcion4"
+            style="@style/OpcionBoton"
+            android:background="@drawable/boton_opcion"
+            android:text="Opción 4"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="4dp"/>
+    </LinearLayout>
+
+    <!-- Botón Siguiente -->
+
+    <!-- Barra de progreso -->
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#E02C4C"
+        android:paddingVertical="10dp"
+        android:text="Siguiente"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/opcionesLayout"
+        android:fontFamily="@font/baloo2_semibold"/>
+
+    <ProgressBar
+        android:id="@+id/progressPreguntas"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:progressDrawable="@drawable/progress_drawable"
+        android:max="15"
+        android:progress="0"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Animación +1 / -1 -->
+    <TextView
+        android:id="@+id/txtCambioPuntaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="+1"
+        android:textColor="#E02C4C"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTemporizador" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo_rank">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Título -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="16dp">
+
+                <!-- Título centrado horizontalmente -->
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Ranking General"
+                    android:textColor="#D32F2F"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/baloo2_semibold" />
+
+                <!-- Botón en la esquina superior derecha -->
+                <ImageView
+                    android:id="@+id/btnRestartQuiz"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/bg_restart_button"
+                    android:src="@drawable/ic_restart"
+                    android:contentDescription="Reiniciar Quiz"
+                    android:padding="10dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/podiumLayout"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:clipChildren="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:weightSum="3">
+
+                <!-- Segundo Lugar -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSecondName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/graphik_medium_trial"
+                        android:gravity="center"
+                        android:text="Jugador 2"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvSecondScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/fondo_score"
+                        android:fontFamily="@font/graphik_medium_trial"
+                        android:padding="5dp"
+                        android:text="80 puntos"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rank_2">
+
+                        <TextView
+                            android:id="@+id/tvSecondPlace"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="#FFFFFF"
+                            android:textSize="80sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- Primer Lugar -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvFirstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/graphik_medium_trial"
+                        android:gravity="center"
+                        android:text="Jugador 1"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvFirstScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/fondo_score"
+                        android:fontFamily="@font/graphik_medium_trial"
+                        android:padding="5dp"
+                        android:text="95 puntos"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rank_1">
+
+                        <TextView
+                            android:id="@+id/tvFirstPlace"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="30sp"
+                            android:gravity="center|top"
+                            android:text="1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="100sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <!-- Tercer Lugar -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvThirdName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/graphik_medium_trial"
+                        android:gravity="center"
+                        android:text="Jugador 3"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvThirdScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/fondo_score"
+                        android:fontFamily="@font/graphik_medium_trial"
+                        android:padding="5dp"
+                        android:text="70 puntos"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rank_3">
+
+                        <TextView
+                            android:id="@+id/tvThirdPlace"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="#FFFFFF"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Lista -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewOthers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>
