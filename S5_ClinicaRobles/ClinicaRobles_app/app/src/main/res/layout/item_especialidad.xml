@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="6dp"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/fondo_secundario">
+
+        <ImageView
+            android:id="@+id/imgEspecialidad"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_placeholder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="Ícono Especialidad"/>
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre Especialidad"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/imgEspecialidad"
+            app:layout_constraintTop_toTopOf="@id/imgEspecialidad"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/graphik_regular_trial"/>
+
+        <TextView
+            android:id="@+id/txtDoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Médico Responsable"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/txtNombre"
+            app:layout_constraintTop_toBottomOf="@id/txtNombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/graphik_regular_trial"
+            android:textColor="#126666"/>
+
+        <TextView
+            android:id="@+id/txtHorario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Horario"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/txtDoctor"
+            app:layout_constraintTop_toBottomOf="@id/txtDoctor"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/graphik_regular_trial"
+            android:textColor="#126666"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

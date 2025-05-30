@@ -1,0 +1,89 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_principal">
+
+    <!-- Logo superior -->
+    <ImageView
+        android:id="@+id/logoClinica"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/clinica_robles"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Banner central al fondo -->
+    <ImageView
+        android:id="@+id/logoBanner"
+        android:layout_width="350dp"
+        android:layout_height="235dp"
+        android:src="@drawable/ic_banner_main"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Contenedor del formulario -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/formContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:padding="24dp"
+        android:background="@drawable/fondo_secundario"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/texto_blanco"
+            android:textColor="@color/texto_blanco"
+            android:textColorHint="@color/texto_blanco"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/graphik_regular_trial"/>
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/texto_blanco"
+            android:textColor="@color/texto_blanco"
+            android:textColorHint="@color/texto_blanco"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/editEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/graphik_regular_trial"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sesión"
+            android:backgroundTint="@color/boton_color"
+            android:textColor="@color/texto_blanco"
+            android:layout_marginTop="24dp"
+            app:cornerRadius="12dp"
+            app:layout_constraintTop_toBottomOf="@id/editPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/graphik_regular_trial"
+            android:textSize="18sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
