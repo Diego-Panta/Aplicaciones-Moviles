@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bizarre">#EFDCE2</color>
+    <color name="monza">#D00431</color>
+    <color name="contessa">#C76077</color>
+    <color name="fuzzy_wuzzy_brown">#C2445C</color>
+    <color name="old_rose">#C4848C</color>
+    <color name="brick_red">#C13051</color>
+    <color name="red_ribbon">#DC0433</color>
+    <color name="puce">#CD7A94</color>
+    <color name="cardinal">#C51C44</color>
+    <color name="cardinal_dark">#A81638</color>
+
+    <!-- EPISI Colors -->
+    <color name="iron">#E3E5E5</color>
+    <color name="tradewind">#50A997</color>
+    <color name="corduroy">#6A6E6A</color>
+    <color name="rolling_stone">#7A8285</color>
+    <color name="cod_gray">#060606</color>
+    <color name="spectra">#32625C</color>
+    <color name="outer_space">#364344</color>
+    <color name="heavy_metal">#343534</color>
+    <color name="firefly">#0F3533</color>
+    <color name="bazaar">#9C7C84</color>
+
+    <!-- Colores UNS -->
+    <color name="colorPrimary">#c51c44</color>
+    <color name="colorPrimaryDark">#a81638</color>
+    <color name="colorAccent">#d00431</color>
+
+    <!-- Colores adicionales -->
+    <color name="gray">#808080</color>
+
+    <!-- Nombres semánticos -->
+    <color name="error">#d00431</color>
+    <color name="success">#50a997</color>
+    <color name="warning">#FFC107</color>
+</resources>

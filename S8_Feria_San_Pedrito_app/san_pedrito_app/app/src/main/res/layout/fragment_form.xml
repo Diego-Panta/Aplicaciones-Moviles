@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Añadimos un RelativeLayout como contenedor principal -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ExtraText">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/iron"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp">
+
+                <!-- Campos del formulario con mejor estilo -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilNombres"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Nombres"
+                    app:boxStrokeColor="@color/cardinal"
+                    app:hintTextColor="@color/cardinal"
+                    android:textColorHint="@color/cardinal"
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="@color/cardinal"
+                    tools:ignore="MissingConstraints">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNombres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="48dp"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilApellidos"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Apellidos"
+                    app:boxStrokeColor="@color/cardinal"
+                    app:hintTextColor="@color/cardinal"
+                    android:textColorHint="@color/cardinal"
+                    app:layout_constraintTop_toBottomOf="@id/tilNombres"
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="@color/cardinal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etApellidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="48dp"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCodigo"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Código"
+                    app:boxStrokeColor="@color/cardinal"
+                    app:hintTextColor="@color/cardinal"
+                    android:textColorHint="@color/cardinal"
+                    app:layout_constraintTop_toBottomOf="@id/tilApellidos"
+                    app:startIconDrawable="@drawable/ic_badge"
+                    app:startIconTint="@color/cardinal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCodigo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="48dp"
+                        android:inputType="text"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilDni"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="DNI"
+                    app:boxStrokeColor="@color/cardinal"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="8"
+                    app:hintTextColor="@color/cardinal"
+                    android:textColorHint="@color/cardinal"
+                    app:counterTextColor="@color/cardinal"
+                    app:layout_constraintTop_toBottomOf="@id/tilCodigo"
+                    app:startIconDrawable="@drawable/ic_identification"
+                    app:startIconTint="@color/cardinal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etDni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="48dp"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCorreo"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Correo electrónico"
+                    app:boxStrokeColor="@color/cardinal"
+                    app:hintTextColor="@color/cardinal"
+                    android:textColorHint="@color/cardinal"
+                    app:layout_constraintTop_toBottomOf="@id/tilDni"
+                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconTint="@color/cardinal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCorreo"
+                        android:paddingStart="48dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilTelefono"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Teléfono"
+                    app:boxStrokeColor="@color/cardinal"
+                    app:hintTextColor="@color/cardinal"
+                    android:textColorHint="@color/cardinal"
+                    app:layout_constraintTop_toBottomOf="@id/tilCorreo"
+                    app:startIconDrawable="@drawable/ic_phone"
+                    app:startIconTint="@color/cardinal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etTelefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="48dp"
+                        android:inputType="phone"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Spinner mejorado -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_tipo"
+                    android:layout_marginTop="16dp"
+                    android:hint="Tipo de participante"
+                    app:boxStrokeColor="@color/cardinal"
+                    app:hintTextColor="@color/cardinal"
+                    android:textColorHint="@color/cardinal"
+                    app:layout_constraintTop_toBottomOf="@id/tilTelefono"
+                    app:startIconDrawable="@drawable/ic_group"
+                    app:startIconTint="@color/cardinal">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/spinnerTipo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="48dp"
+                        android:inputType="none"
+                        android:textColor="@color/black"
+                        tools:ignore="LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Botón con mejor estilo y efecto ripple -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRegistrar"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Registrar Asistencia"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/cardinal"
+                    app:cornerRadius="8dp"
+                    app:icon="@drawable/ic_check_circle"
+                    app:iconTint="@color/white"
+                    app:layout_constraintTop_toBottomOf="@id/cb_tipo"
+                    app:rippleColor="@color/cardinal_dark" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

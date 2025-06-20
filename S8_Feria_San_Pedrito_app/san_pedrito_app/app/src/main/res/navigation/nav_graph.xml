@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/formFragment">
+
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="com.example.san_pedrito_app.view.fragments.FormFragment"
+        android:label="Registro"
+        tools:layout="@layout/fragment_form" />
+
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.san_pedrito_app.view.fragments.InfoFragment"
+        android:label="Información"
+        tools:layout="@layout/fragment_info" />
+
+    <fragment
+        android:id="@+id/programFragment"
+        android:name="com.example.san_pedrito_app.view.fragments.com.example.san_pedrito_app.view.fragments.ProgramFragment"
+        android:label="Programa"
+        tools:layout="@layout/fragment_program" />
+
+    <fragment
+        android:id="@+id/termsFragment"
+        android:name="com.example.san_pedrito_app.view.fragments.TermsFragment"
+        android:label="Términos"
+        tools:layout="@layout/fragment_terms" />
+</navigation>

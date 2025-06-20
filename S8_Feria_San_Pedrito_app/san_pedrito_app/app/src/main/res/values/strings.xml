@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Registro San Pedrito</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titulo_formulario">Registro para la Fiesta de San Pedrito</string>
+    <string name="subtitulo_formulario_ingenieria">Facultad de Ingeniería de Sistemas - UNI</string>
+
+    <string name="alumno">Alumno</string>
+    <string name="docente">Docente</string>
+    <string name="codigo">Código</string>
+    <string name="codigo_alumno">Código de alumno</string>
+    <string name="codigo_docente">Código de docente</string>
+    <string name="ciclo">Ciclo de estudio</string>
+    <string name="especialidad">Especialidad</string>
+
+    <string name="registro_exitoso_alumno">¡Alumno registrado con éxito!</string>
+    <string name="registro_exitoso_docente">¡Docente registrado con éxito!</string>
+
+    <!-- Info Fragment -->
+    <string name="desfile_image_desc">Imagen del desfile San Pedrito</string>
+    <string name="info_desfile">Información sobre el desfile San Pedrito</string>
+    <string name="contacto_titulo">Contacto y Organización</string>
+    <string name="contacto_info">Para más información, contactar con la comisión organizadora:\n\nEmail: cultura@uns.edu.pe\nTeléfono: 053-464646</string>
+
+    <!-- Program Fragment -->
+    <string name="programa_titulo">PROGRAMA DEL DESFILE</string>
+    <string name="programa_detalle">Detalles del programa del desfile</string>
+    <string name="importante">¡Importante!</string>
+    <string name="importante_info">Todos los participantes deben presentarse 30 minutos antes del inicio con su código de registro.</string>
+
+    <!-- Terms Fragment -->
+    <string name="terminos_titulo">Términos y Condiciones</string>
+    <string name="terminos_subtitulo">Por favor lea atentamente los términos antes de participar</string>
+</resources>
