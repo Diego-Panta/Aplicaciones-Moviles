@@ -75,7 +75,9 @@ androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1
    - Click en "Run"
 
 ## Capturas de pantalla (insertar imágenes)
-[Pantalla Principal] - Espacio para imagen
+[Pantalla Principal]
+![image](https://github.com/user-attachments/assets/e4909005-7dac-4979-9840-a7be88d11593)
+
 [Formulario de Registro] - Espacio para imagen
 [Información del Evento] - Espacio para imagen
 [Programa del Desfile] - Espacio para imagen
