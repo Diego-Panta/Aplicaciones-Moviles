@@ -38,23 +38,9 @@ Aplicación Android para registrar la asistencia de docentes y alumnos al desfil
 - JDK 17
 
 ## Estructura del proyecto
-app/
-├── model/
-│   ├── Participante.kt
-│   └── SanPedritoRepository.kt
-├── view/
-│   ├── fragments/
-│   │   ├── FormFragment.kt
-│   │   ├── InfoFragment.kt
-│   │   ├── ProgramFragment.kt
-│   │   └── TermsFragment.kt
-│   └── activities/
-│       └── MainActivity.kt
-├── viewmodel/
-│   └── SanPedritoViewModel.kt
-└── utils/
-    ├── Validator.kt
-    └── Extensions.kt
+
+![image](https://github.com/user-attachments/assets/1b831e04-4b91-405c-9b9b-471bce17bc35)
+
 
 ## Dependencias principales
 androidx.core:core-ktx:1.10.1
@@ -65,7 +51,7 @@ androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1
 
 ## Instrucciones de instalación
 1. Clonar el repositorio:
-   git clone https://github.com/tu-usuario/san-pedrito-app.git
+   git clone https://github.com/Diego-Panta/Aplicaciones-Moviles/edit/master/S8_Feria_San_Pedrito_app
 
 2. Abrir en Android Studio:
    File > Open > Seleccionar carpeta del proyecto
