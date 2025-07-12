@@ -39,7 +39,7 @@ Una calculadora básica para Android desarrollada con **Kotlin** que implementa 
 ---
 
 ## 📂 Estructura del Proyecto
-
+```plaintext
 app/
 ├── src/
 │   └── main/
@@ -57,7 +57,7 @@ app/
 │       └── AndroidManifest.xml              # Configuración de la app
 ├── build.gradle                             # Configuración y dependencias del módulo
 
----
+```
 
 ## 🔧 Tecnologías Utilizadas
 
