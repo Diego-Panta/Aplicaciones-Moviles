@@ -41,18 +41,21 @@ Una calculadora básica para Android desarrollada con **Kotlin** que implementa 
 ## 📂 Estructura del Proyecto
 
 app/
-├── src/main/java/com/example/calculadora/
-│ ├── MainActivity.kt # Actividad principal
-│ └── CalculatorViewModel.kt # Lógica de negocio
-├── src/main/res/
-│ ├── layout/
-│ │ └── activity_main.xml # Diseño principal
-│ ├── values/
-│ │ ├── colors.xml # Colores del tema
-│ │ ├── strings.xml # Strings localizables
-│ │ └── styles.xml # Estilos personalizados
-│ └── AndroidManifest.xml # Configuración de la app
-└── build.gradle # Dependencias
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/example/calculadora/
+│       │       ├── MainActivity.kt          # Actividad principal
+│       │       └── CalculatorViewModel.kt   # Lógica de negocio
+│       ├── res/
+│       │   ├── layout/
+│       │   │   └── activity_main.xml        # Diseño principal
+│       │   ├── values/
+│       │   │   ├── colors.xml               # Colores del tema
+│       │   │   ├── strings.xml              # Strings localizables
+│       │   │   └── styles.xml               # Estilos personalizados
+│       └── AndroidManifest.xml              # Configuración de la app
+├── build.gradle                             # Configuración y dependencias del módulo
 
 ---
 
