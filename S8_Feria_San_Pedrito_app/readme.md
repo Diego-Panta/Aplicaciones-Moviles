@@ -38,23 +38,9 @@ Aplicación Android para registrar la asistencia de docentes y alumnos al desfil
 - JDK 17
 
 ## Estructura del proyecto
-app/
-├── model/
-│   ├── Participante.kt
-│   └── SanPedritoRepository.kt
-├── view/
-│   ├── fragments/
-│   │   ├── FormFragment.kt
-│   │   ├── InfoFragment.kt
-│   │   ├── ProgramFragment.kt
-│   │   └── TermsFragment.kt
-│   └── activities/
-│       └── MainActivity.kt
-├── viewmodel/
-│   └── SanPedritoViewModel.kt
-└── utils/
-    ├── Validator.kt
-    └── Extensions.kt
+
+![image](https://github.com/user-attachments/assets/1b831e04-4b91-405c-9b9b-471bce17bc35)
+
 
 ## Dependencias principales
 androidx.core:core-ktx:1.10.1
@@ -65,7 +51,7 @@ androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1
 
 ## Instrucciones de instalación
 1. Clonar el repositorio:
-   git clone https://github.com/tu-usuario/san-pedrito-app.git
+   git clone https://github.com/Diego-Panta/Aplicaciones-Moviles/edit/master/S8_Feria_San_Pedrito_app
 
 2. Abrir en Android Studio:
    File > Open > Seleccionar carpeta del proyecto
@@ -75,16 +61,30 @@ androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1
    - Click en "Run"
 
 ## Capturas de pantalla (insertar imágenes)
-[Pantalla Principal] - Espacio para imagen
-[Formulario de Registro] - Espacio para imagen
-[Información del Evento] - Espacio para imagen
-[Programa del Desfile] - Espacio para imagen
-[Términos y Condiciones] - Espacio para imagen
+[Formulario de Registro]
+
+![image](https://github.com/user-attachments/assets/e4909005-7dac-4979-9840-a7be88d11593)
+
+[Información del Evento]
+
+![image](https://github.com/user-attachments/assets/93f7d1d4-6337-469c-bfa2-37eec975dcc8)
+
+
+[Programa del Desfile]
+
+![image](https://github.com/user-attachments/assets/e0b27dc3-97c5-40cc-b8ac-860ae17b3a3a)
+
+
+[Términos y Condiciones] 
+
+![image](https://github.com/user-attachments/assets/42f0a455-e359-40a6-847b-38d61c4dc360)
+
+
 
 ## Licencia
-Este proyecto está bajo la licencia MIT.
+Este proyecto está bajo la licencia de Diego Panta.
 
 ## Contacto
 Para soporte o contribuciones:
-contacto@uns.edu.pe
-www.uns.edu.pe
+josepanta507@gmail.com
+https://github.com/Diego-Panta
